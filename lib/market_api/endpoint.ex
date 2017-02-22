@@ -38,5 +38,6 @@ defmodule MarketApi.Endpoint do
     key: "_market_api_key",
     signing_salt: "nKSXRRLJ"
 
+  plug Corsica, origins: "*"
   plug MarketApi.Router
 end
